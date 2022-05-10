@@ -37,13 +37,17 @@ function listHobbies() {
     }
 }
 
+console.log(`testing listHobbies ${listHobbies()}`);
+
 function sumHobbies () {
     let sum = 0;
     for ( let iterator of person.hobbies) {
         sum += iterator.moneySpent;
     }
-    return sum;
+    return `I have spent $${sum} on hobbies`;
 }
+
+console.log('testing sumHobbies', sumHobbies());
 
 
 /*
